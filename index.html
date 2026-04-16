@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230ea5e9'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='Inter,Arial,sans-serif' font-weight='900' fill='white'>T</text></svg>" />
   <title>Truong Trung Nghia — Full Stack Developer</title>
   <meta name="description" content="Portfolio of Truong Trung Nghia, a Full Stack Developer with 2+ years of experience building enterprise-grade web applications in PHP, Laravel, CodeIgniter, and React." />
 
@@ -172,15 +174,66 @@
           <span class="section-tag">Work History</span>
           <h2 class="section-title">Experience</h2>
         </div>
-        <div class="timeline reveal">
-          <div class="timeline-placeholder glass-card">
-            <div class="placeholder-icon">🏢</div>
-            <p class="placeholder-text">Full experience details coming in Phase 2</p>
-            <div class="placeholder-chips">
-              <span class="chip chip-sm">TPS Software · 2025–Present</span>
-              <span class="chip chip-sm">QASoft Solution · 2023–2025</span>
+
+        <div class="timeline">
+
+          <!-- TPS Software -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card hover-lift">
+              <div class="exp-header">
+                <div class="exp-info">
+                  <h3 class="exp-company">TPS Software</h3>
+                  <p class="exp-role">Full Stack Developer</p>
+                  <p class="exp-meta">Tan Binh, TP.HCM &nbsp;·&nbsp; Apr 2025 – Present</p>
+                </div>
+                <span class="exp-badge exp-current">Current</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Built B2B2C digital checkout pipeline serving <strong>1,000+ municipalities</strong> on multi-tenant architecture</li>
+                <li>Engineered automated financial reconciliation engine → <strong>~80% reduction in accounting time</strong></li>
+                <li>Designed digital loyalty coin system (Furusato Nozei) → <strong>25% increase in repeat usage</strong></li>
+                <li>Built RBAC role management dashboard → <strong>50% faster admin onboarding</strong></li>
+              </ul>
+              <div class="exp-tech">
+                <span class="chip chip-sm">Laravel</span>
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">AWS</span>
+                <span class="chip chip-sm">Redis</span>
+                <span class="chip chip-sm">MySQL</span>
+                <span class="chip chip-sm">Stripe</span>
+              </div>
             </div>
           </div>
+
+          <!-- QASoft Solution -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card hover-lift">
+              <div class="exp-header">
+                <div class="exp-info">
+                  <h3 class="exp-company">QASoft Solution</h3>
+                  <p class="exp-role">Full Stack Developer</p>
+                  <p class="exp-meta">Thu Duc, TP.HCM &nbsp;·&nbsp; Sep 2023 – Apr 2025</p>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Delivered <strong>5+ production projects</strong> across Fintech, E-commerce, SaaS, Booking, and ERP domains</li>
+                <li>Integrated <strong>Stripe and PayPal</strong> payment gateways with retry logic and webhook verification</li>
+                <li>Implemented CSRF protection, OAuth2 flows, and JWT-based auth across all projects</li>
+                <li>Deployed and managed services on <strong>AWS EC2, S3, Lambda, and CloudFront</strong></li>
+              </ul>
+              <div class="exp-tech">
+                <span class="chip chip-sm">Laravel</span>
+                <span class="chip chip-sm">CodeIgniter</span>
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">AWS</span>
+                <span class="chip chip-sm">OAuth2</span>
+                <span class="chip chip-sm">Docker</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -192,17 +245,153 @@
           <span class="section-tag">Featured Work</span>
           <h2 class="section-title">Projects</h2>
         </div>
-        <div class="projects-grid reveal">
-          <div class="glass-card project-placeholder">
-            <div class="placeholder-icon">🚀</div>
-            <p class="placeholder-text">Detailed project showcase coming in Phase 2</p>
-            <div class="placeholder-chips">
-              <span class="chip chip-sm">Unioss</span>
-              <span class="chip chip-sm">Nippoh</span>
-              <span class="chip chip-sm">Nail</span>
-              <span class="chip chip-sm">Misa ERP</span>
+
+        <div class="projects-grid">
+
+          <!-- Unioss -->
+          <div class="project-card glass-card hover-lift reveal">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag">E-commerce · IoT</span>
+                <span class="project-period">Jun 2024 – Nov 2024</span>
+              </div>
+              <h3 class="project-name">Unioss</h3>
+              <p class="project-desc">Furusato Nozei e-commerce + IoT vending machine platform for 1,000+ Japanese municipalities — multi-tenant, loyalty coins, financial reconciliation, real-time IoT terminals.</p>
+            </div>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-num">80%</span>
+                <span class="highlight-label">Accounting time saved</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">60%</span>
+                <span class="highlight-label">Faster IoT checkout</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">90%+</span>
+                <span class="highlight-label">Anomaly reduction</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">25%</span>
+                <span class="highlight-label">Repeat usage ↑</span>
+              </div>
+            </div>
+            <div class="project-features">
+              <div class="feature-item"><span class="feature-dot"></span>IoT vending machine terminal integration</div>
+              <div class="feature-item"><span class="feature-dot"></span>Order state machine → 90%+ anomaly reduction</div>
+              <div class="feature-item"><span class="feature-dot"></span>Digital wallet &amp; loyalty coin system</div>
+              <div class="feature-item"><span class="feature-dot"></span>Multi-tenant admin for 1,000+ municipalities</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech">
+                <span class="chip chip-sm">Laravel</span>
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">MySQL</span>
+                <span class="chip chip-sm">AWS</span>
+                <span class="chip chip-sm">Redis</span>
+                <span class="chip chip-sm">Docker</span>
+              </div>
+              <span class="project-team">8 engineers</span>
             </div>
           </div>
+
+          <!-- Nippoh -->
+          <div class="project-card glass-card hover-lift reveal reveal-delay-1">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag">IoT · SaaS · B2B</span>
+                <span class="project-period">Apr 2024 – Present</span>
+              </div>
+              <h3 class="project-name">Nippoh</h3>
+              <p class="project-desc">B2B IoT construction monitoring SaaS — real-time sensor ingestion via AWS IoT Core/MQTT, WebAssembly 3D visualization, cryptographic tamper detection, Azure AD SSO.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-item"><span class="feature-dot"></span>AWS IoT Core + MQTT real-time sensor pipeline</div>
+              <div class="feature-item"><span class="feature-dot"></span>React SPA with WebAssembly 3D visualization</div>
+              <div class="feature-item"><span class="feature-dot"></span>Cryptographic tamper detection for compliance</div>
+              <div class="feature-item"><span class="feature-dot"></span>Azure AD SSO for enterprise authentication</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech">
+                <span class="chip chip-sm">Laravel</span>
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">AWS IoT</span>
+                <span class="chip chip-sm">MQTT</span>
+                <span class="chip chip-sm">WASM</span>
+                <span class="chip chip-sm">Azure AD</span>
+              </div>
+              <span class="project-team">6 engineers</span>
+            </div>
+          </div>
+
+          <!-- Nail -->
+          <div class="project-card glass-card hover-lift reveal reveal-delay-2">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag">Booking · Multi-tenant</span>
+                <span class="project-period">Jun 2024 – Nov 2024</span>
+              </div>
+              <h3 class="project-name">Nail Booking</h3>
+              <p class="project-desc">Multi-platform booking system for salon chains — multi-tenant architecture, OAuth2 social login, background job scheduling, performance-optimized APIs.</p>
+            </div>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-num">60%</span>
+                <span class="highlight-label">Response time ↓</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-num">35%</span>
+                <span class="highlight-label">Error rate ↓</span>
+              </div>
+            </div>
+            <div class="project-features">
+              <div class="feature-item"><span class="feature-dot"></span>Multi-tenant architecture for salon brands</div>
+              <div class="feature-item"><span class="feature-dot"></span>OAuth2 + JWT refresh token auth flow</div>
+              <div class="feature-item"><span class="feature-dot"></span>Background job scheduling (reminders, notifications)</div>
+              <div class="feature-item"><span class="feature-dot"></span>35% error reduction via comprehensive test coverage</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech">
+                <span class="chip chip-sm">Laravel</span>
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">MySQL</span>
+                <span class="chip chip-sm">Redis</span>
+                <span class="chip chip-sm">OAuth2</span>
+                <span class="chip chip-sm">Docker</span>
+              </div>
+              <span class="project-team">6 engineers</span>
+            </div>
+          </div>
+
+          <!-- Misa ERP -->
+          <div class="project-card glass-card hover-lift reveal reveal-delay-3">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag">ERP · Enterprise</span>
+                <span class="project-period">Dec 2023 – Jun 2024</span>
+              </div>
+              <h3 class="project-name">Misa ERP</h3>
+              <p class="project-desc">Enterprise Resource Planning system for Misa Group — multi-layer modular architecture, RBAC across departments, Redis HA cluster, CI/CD pipeline, mobile REST API.</p>
+            </div>
+            <div class="project-features">
+              <div class="feature-item"><span class="feature-dot"></span>Multi-layer modularization by business domain</div>
+              <div class="feature-item"><span class="feature-dot"></span>RBAC across all departments and user roles</div>
+              <div class="feature-item"><span class="feature-dot"></span>Redis master-slave + Sentinel high availability</div>
+              <div class="feature-item"><span class="feature-dot"></span>CI/CD with GitHub Actions + Docker deployment</div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech">
+                <span class="chip chip-sm">Laravel</span>
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">MySQL</span>
+                <span class="chip chip-sm">Redis</span>
+                <span class="chip chip-sm">AWS S3</span>
+                <span class="chip chip-sm">GitHub CI</span>
+              </div>
+              <span class="project-team">8 engineers</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -212,19 +401,107 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="section-tag">Technical Skills</span>
-          <h2 class="section-title">Skills</h2>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
         </div>
-        <div class="skills-placeholder glass-card reveal">
-          <div class="placeholder-icon">⚙️</div>
-          <p class="placeholder-text">Full skills matrix coming in Phase 3</p>
-          <div class="placeholder-chips">
-            <span class="chip chip-sm">PHP</span>
-            <span class="chip chip-sm">Laravel</span>
-            <span class="chip chip-sm">React</span>
-            <span class="chip chip-sm">MySQL</span>
-            <span class="chip chip-sm">Docker</span>
-            <span class="chip chip-sm">AWS</span>
+
+        <div class="skills-grid">
+
+          <div class="skill-group glass-card reveal">
+            <h3 class="skill-group-title"><span class="skill-group-icon">💻</span> Languages</h3>
+            <div class="skill-chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">PHP</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Python</span>
+            </div>
           </div>
+
+          <div class="skill-group glass-card reveal reveal-delay-1">
+            <h3 class="skill-group-title"><span class="skill-group-icon">⚡</span> Frameworks</h3>
+            <div class="skill-chips">
+              <span class="chip">Laravel</span>
+              <span class="chip">CodeIgniter</span>
+              <span class="chip">React</span>
+              <span class="chip">Vue</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">jQuery</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal reveal-delay-2">
+            <h3 class="skill-group-title"><span class="skill-group-icon">🔌</span> APIs &amp; Protocols</h3>
+            <div class="skill-chips">
+              <span class="chip">RESTful APIs</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">WebSocket</span>
+              <span class="chip">gRPC</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal reveal-delay-3">
+            <h3 class="skill-group-title"><span class="skill-group-icon">🗄</span> Databases &amp; Storage</h3>
+            <div class="skill-chips">
+              <span class="chip">MySQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">DynamoDB</span>
+              <span class="chip">Redis</span>
+              <span class="chip">Memcached</span>
+              <span class="chip">AWS S3</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal">
+            <h3 class="skill-group-title"><span class="skill-group-icon">🔀</span> Version Control</h3>
+            <div class="skill-chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">GitLab</span>
+              <span class="chip">Bitbucket</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal reveal-delay-1">
+            <h3 class="skill-group-title"><span class="skill-group-icon">🛠</span> DevOps &amp; Testing</h3>
+            <div class="skill-chips">
+              <span class="chip">Docker</span>
+              <span class="chip">AWS EC2</span>
+              <span class="chip">Nginx</span>
+              <span class="chip">Linux</span>
+              <span class="chip">PHPUnit</span>
+              <span class="chip">Jest</span>
+              <span class="chip">SonarQube</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal reveal-delay-2">
+            <h3 class="skill-group-title"><span class="skill-group-icon">🧰</span> Tools</h3>
+            <div class="skill-chips">
+              <span class="chip">VS Code</span>
+              <span class="chip">Postman</span>
+              <span class="chip">Swagger</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Jira</span>
+              <span class="chip">Cursor</span>
+              <span class="chip">Claude Code</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal reveal-delay-3">
+            <h3 class="skill-group-title"><span class="skill-group-icon">🤝</span> Soft Skills</h3>
+            <div class="skill-chips">
+              <span class="chip">Problem-solving</span>
+              <span class="chip">Analytical Thinking</span>
+              <span class="chip">Adaptability</span>
+              <span class="chip">Self-learning</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">English</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -233,17 +510,55 @@
     <section id="education" class="section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-tag">Education</span>
-          <h2 class="section-title">Education & Certifications</h2>
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
         </div>
-        <div class="edu-placeholder glass-card reveal">
-          <div class="placeholder-icon">🎓</div>
-          <p class="placeholder-text">Education and certifications details coming in Phase 3</p>
-          <div class="placeholder-chips">
-            <span class="chip chip-sm">Hutech University · IT · 2021–2025</span>
-            <span class="chip chip-sm">HackerRank Certified</span>
-            <span class="chip chip-sm">FreeCodeCamp APIs</span>
+
+        <div class="edu-certs-grid">
+
+          <!-- Education -->
+          <div class="edu-card glass-card hover-lift reveal">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-content">
+              <h3 class="edu-degree">Bachelor of Science — Information Technology</h3>
+              <p class="edu-school">Hutech University</p>
+              <p class="edu-location">Thu Duc, TP.HCM</p>
+              <p class="edu-period">Sep 2021 – Sep 2025</p>
+            </div>
           </div>
+
+          <!-- Certifications -->
+          <div class="certs-list reveal reveal-delay-1">
+            <h3 class="certs-heading">Certifications</h3>
+
+            <div class="cert-card glass-card hover-lift">
+              <div class="cert-icon">🏆</div>
+              <div class="cert-content">
+                <h4 class="cert-name">Problem Solving</h4>
+                <p class="cert-issuer">HackerRank</p>
+                <p class="cert-date">Jul 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card hover-lift">
+              <div class="cert-icon">📜</div>
+              <div class="cert-content">
+                <h4 class="cert-name">JSON Path Test</h4>
+                <p class="cert-issuer">KodeKloud</p>
+                <p class="cert-date">Aug 2024</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card hover-lift">
+              <div class="cert-icon">🔧</div>
+              <div class="cert-content">
+                <h4 class="cert-name">Backend Development &amp; APIs</h4>
+                <p class="cert-issuer">FreeCodeCamp</p>
+                <p class="cert-date">Aug 2024</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
