@@ -11,9 +11,9 @@
 | # | Phase | Goal | Requirements | Plans |
 |---|-------|------|--------------|-------|
 | 1 | Foundation & Hero | 1/1 | Complete   | 2026-04-16 |
-| 2 | Experience & Projects | Build work history and detailed project sections | EXP-01..02, PROJ-01..04 | 2 |
-| 3 | Skills, Education & Certifications | Skills matrix, education, certifications | SKILL-01..08, EDU-01, CERT-01..03 | 2 |
-| 4 | Vercel Deployment & Polish | Deploy to Vercel, custom domain, final polish & performance | DEPLOY-01..02 | 2 |
+| 2 | Experience & Projects | 1/1 | Complete   | 2026-04-16 |
+| 3 | Skills, Education & Certifications | 1/1 | Complete   | 2026-04-16 |
+| 4 | Vercel Deployment & Polish | 1/1 | Complete   | 2026-04-16 |
 
 ---
 
@@ -71,7 +71,7 @@
 5. Section is visually consistent with Phase 1 design system (glassmorphism cards, consistent spacing)
 
 **UI hint**: yes  
-**Plans:** experience-section, projects-section
+**Plans:** 1/1 plans complete
 
 ---
 
@@ -101,7 +101,7 @@
 5. Section looks neat and avoids visual clutter — comfortable to scan in under 10 seconds
 
 **UI hint**: yes  
-**Plans:** skills-section, education-and-certs
+**Plans:** 1/1 plans complete
 
 ---
 
@@ -121,7 +121,7 @@
 5. Lighthouse score ≥ 90 for Performance, Accessibility, and SEO on desktop
 
 **UI hint**: no  
-**Plans:** vercel-config, final-polish
+**Plans:** 1/1 plans complete
 
 ---
 
