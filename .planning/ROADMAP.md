@@ -10,7 +10,7 @@
 
 | # | Phase | Goal | Requirements | Plans |
 |---|-------|------|--------------|-------|
-| 1 | Foundation & Hero | Scaffold site structure, design system, hero section, navigation, SEO | HERO-01..05, SUMM-01..02, DESIGN-01..06, SEO-01..03 | 3 |
+| 1 | Foundation & Hero | 1/1 | Complete   | 2026-04-16 |
 | 2 | Experience & Projects | Build work history and detailed project sections | EXP-01..02, PROJ-01..04 | 2 |
 | 3 | Skills, Education & Certifications | Skills matrix, education, certifications | SKILL-01..08, EDU-01, CERT-01..03 | 2 |
 | 4 | Vercel Deployment & Polish | Deploy to Vercel, custom domain, final polish & performance | DEPLOY-01..02 | 2 |
@@ -47,7 +47,7 @@
 5. Chrome DevTools shows correct `<title>` and `<meta description>` in document head
 
 **UI hint**: yes  
-**Plans:** foundation-layout, hero-section, design-system
+**Plans:** 1/1 plans complete
 
 ---
 
