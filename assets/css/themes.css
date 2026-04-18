@@ -1,0 +1,364 @@
+/* ═══════════════════════════════════════════════════════════
+   Portfolio Theme System
+   4 Themes: Midnight (default) · Arctic · Forest · Dusk
+   Applied via [data-theme] attribute on <html>
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Midnight (Default) ─────────────────────────────────── */
+/* Already declared in :root inside style.css — no duplication needed.
+   Explicit [data-theme="midnight"] ensures it wins over other overrides. */
+:root,
+[data-theme="midnight"] {
+  --bg-primary:       #070d1a;
+  --bg-secondary:     #0d1629;
+  --bg-card:          rgba(255, 255, 255, 0.03);
+  --bg-card-hover:    rgba(255, 255, 255, 0.06);
+  --border-glass:     rgba(255, 255, 255, 0.07);
+  --border-hover:     rgba(14, 165, 233, 0.35);
+
+  --accent:           #0ea5e9;
+  --accent-2:         #6366f1;
+  --accent-3:         #8b5cf6;
+  --accent-teal:      #14b8a6;
+  --accent-glow:      rgba(14, 165, 233, 0.25);
+  --accent-hover:     #38bdf8;
+  --accent-rgb:       14, 165, 233;
+
+  --text-primary:     #f1f5f9;
+  --text-secondary:   #94a3b8;
+  --text-muted:       #475569;
+
+  --gradient-brand:   linear-gradient(135deg, #0ea5e9 0%, #6366f1 55%, #8b5cf6 100%);
+  --gradient-subtle:  linear-gradient(135deg, rgba(14,165,233,0.08) 0%, rgba(139,92,246,0.08) 100%);
+  --gradient-card:    linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+
+  --shadow-glow:      0 0 40px rgba(14, 165, 233, 0.15);
+  --shadow-card:      0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lift:      0 20px 48px rgba(14, 165, 233, 0.18);
+
+  --theme-swatch:     linear-gradient(135deg, #0ea5e9, #8b5cf6);
+  --theme-type:       dark;
+}
+
+/* ─── Arctic (Light) ─────────────────────────────────────── */
+[data-theme="arctic"] {
+  --bg-primary:       #f8fafc;
+  --bg-secondary:     #f1f5f9;
+  --bg-card:          rgba(255, 255, 255, 0.80);
+  --bg-card-hover:    rgba(255, 255, 255, 0.95);
+  --border-glass:     rgba(15, 23, 42, 0.08);
+  --border-hover:     rgba(79, 70, 229, 0.35);
+
+  --accent:           #4f46e5;
+  --accent-2:         #7c3aed;
+  --accent-3:         #2563eb;
+  --accent-teal:      #0891b2;
+  --accent-glow:      rgba(79, 70, 229, 0.15);
+  --accent-hover:     #6366f1;
+  --accent-rgb:       79, 70, 229;
+
+  --text-primary:     #1e293b;
+  --text-secondary:   #475569;
+  --text-muted:       #94a3b8;
+
+  --gradient-brand:   linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #2563eb 100%);
+  --gradient-subtle:  linear-gradient(135deg, rgba(79,70,229,0.06) 0%, rgba(37,99,235,0.06) 100%);
+  --gradient-card:    linear-gradient(145deg, rgba(255,255,255,0.90) 0%, rgba(241,245,249,0.70) 100%);
+
+  --shadow-glow:      0 0 40px rgba(79, 70, 229, 0.10);
+  --shadow-card:      0 4px 24px rgba(15, 23, 42, 0.10);
+  --shadow-lift:      0 20px 48px rgba(79, 70, 229, 0.12);
+
+  --theme-swatch:     linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  --theme-type:       light;
+}
+
+/* ─── Forest (Dark) ──────────────────────────────────────── */
+[data-theme="forest"] {
+  --bg-primary:       #0d1f18;
+  --bg-secondary:     #122b21;
+  --bg-card:          rgba(255, 255, 255, 0.03);
+  --bg-card-hover:    rgba(255, 255, 255, 0.06);
+  --border-glass:     rgba(255, 255, 255, 0.07);
+  --border-hover:     rgba(16, 185, 129, 0.35);
+
+  --accent:           #10b981;
+  --accent-2:         #059669;
+  --accent-3:         #34d399;
+  --accent-teal:      #0d9488;
+  --accent-glow:      rgba(16, 185, 129, 0.25);
+  --accent-hover:     #34d399;
+  --accent-rgb:       16, 185, 129;
+
+  --text-primary:     #f0fdf4;
+  --text-secondary:   #a7f3d0;
+  --text-muted:       #6ee7b7;
+
+  --gradient-brand:   linear-gradient(135deg, #10b981 0%, #059669 55%, #34d399 100%);
+  --gradient-subtle:  linear-gradient(135deg, rgba(16,185,129,0.08) 0%, rgba(52,211,153,0.08) 100%);
+  --gradient-card:    linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+
+  --shadow-glow:      0 0 40px rgba(16, 185, 129, 0.15);
+  --shadow-card:      0 4px 24px rgba(0, 0, 0, 0.40);
+  --shadow-lift:      0 20px 48px rgba(16, 185, 129, 0.18);
+
+  --theme-swatch:     linear-gradient(135deg, #10b981, #059669);
+  --theme-type:       dark;
+}
+
+/* ─── Dusk (Dark) ────────────────────────────────────────── */
+[data-theme="dusk"] {
+  --bg-primary:       #0f0a1e;
+  --bg-secondary:     #18102e;
+  --bg-card:          rgba(255, 255, 255, 0.03);
+  --bg-card-hover:    rgba(255, 255, 255, 0.06);
+  --border-glass:     rgba(255, 255, 255, 0.07);
+  --border-hover:     rgba(244, 114, 182, 0.35);
+
+  --accent:           #f472b6;
+  --accent-2:         #a855f7;
+  --accent-3:         #ec4899;
+  --accent-teal:      #c084fc;
+  --accent-glow:      rgba(244, 114, 182, 0.25);
+  --accent-hover:     #fb7185;
+  --accent-rgb:       244, 114, 182;
+
+  --text-primary:     #fdf4ff;
+  --text-secondary:   #e9d5ff;
+  --text-muted:       #c4b5fd;
+
+  --gradient-brand:   linear-gradient(135deg, #f472b6 0%, #a855f7 55%, #ec4899 100%);
+  --gradient-subtle:  linear-gradient(135deg, rgba(244,114,182,0.08) 0%, rgba(168,85,247,0.08) 100%);
+  --gradient-card:    linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+
+  --shadow-glow:      0 0 40px rgba(244, 114, 182, 0.15);
+  --shadow-card:      0 4px 24px rgba(0, 0, 0, 0.40);
+  --shadow-lift:      0 20px 48px rgba(244, 114, 182, 0.18);
+
+  --theme-swatch:     linear-gradient(135deg, #f472b6, #a855f7);
+  --theme-type:       dark;
+}
+
+/* ─── Smooth theme transition ────────────────────────────── */
+/* Applied via JS class toggle — removed after 400ms to keep hover transitions fast */
+html.theme-transitioning,
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.25s ease,
+    box-shadow 0.3s ease !important;
+}
+
+/* ─── Arctic light-mode overrides ───────────────────────────
+   Some elements need extra help adapting to light backgrounds. */
+[data-theme="arctic"] body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="arctic"] .hero-bg-mesh {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(79,70,229,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(124,58,237,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 60% at 10% 80%, rgba(8,145,178,0.04) 0%, transparent 60%);
+}
+
+[data-theme="arctic"] .hero-bg-mesh::after {
+  background-image: radial-gradient(rgba(79,70,229,0.06) 1px, transparent 1px);
+}
+
+[data-theme="arctic"] .nav-inner {
+  background: rgba(248, 250, 252, 0.92);
+}
+
+[data-theme="arctic"] .nav-inner.scrolled {
+  background: rgba(241, 245, 249, 0.97);
+  border-color: rgba(79, 70, 229, 0.15);
+}
+
+[data-theme="arctic"] .nav-link {
+  color: #475569;
+}
+
+[data-theme="arctic"] .nav-link:hover,
+[data-theme="arctic"] .nav-link.active {
+  color: #1e293b;
+  background: rgba(79, 70, 229, 0.08);
+}
+
+[data-theme="arctic"] footer#contact {
+  border-top-color: rgba(15, 23, 42, 0.10);
+}
+
+[data-theme="arctic"] .timeline::before {
+  background: linear-gradient(to bottom, var(--accent), var(--accent-3), transparent);
+}
+
+/* ─── Theme Selector Widget ──────────────────────────────── */
+.theme-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#theme-toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+#theme-toggle:hover {
+  border-color: var(--border-hover);
+  color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.08);
+}
+
+#theme-toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.10);
+  box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.25);
+}
+
+#theme-toggle svg {
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle[aria-expanded="true"] svg {
+  transform: rotate(30deg);
+}
+
+/* Arctic needs different toggle bg */
+[data-theme="arctic"] #theme-toggle {
+  background: rgba(15, 23, 42, 0.05);
+  border-color: rgba(15, 23, 42, 0.12);
+  color: #475569;
+}
+
+[data-theme="arctic"] #theme-toggle:hover {
+  border-color: var(--border-hover);
+  color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.08);
+}
+
+[data-theme="arctic"] #theme-toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Panel */
+.theme-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 192px;
+  padding: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-card);
+  z-index: 1001;
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.theme-panel.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.theme-panel-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 4px 10px 8px;
+  display: block;
+}
+
+/* Theme option row */
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-align: left;
+  transition: background-color 0.15s ease;
+}
+
+.theme-option:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="arctic"] .theme-option:hover {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.theme-option[aria-selected="true"] {
+  background: rgba(var(--accent-rgb), 0.10);
+}
+
+.theme-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Arctic swatch needs dark border */
+[data-theme="arctic"] .theme-swatch {
+  border-color: rgba(15, 23, 42, 0.15);
+}
+
+.theme-option-label {
+  flex: 1;
+}
+
+.theme-check {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.theme-option[aria-selected="true"] .theme-check {
+  opacity: 1;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .theme-panel {
+    right: -8px;
+  }
+}
