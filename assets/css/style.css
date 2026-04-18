@@ -444,6 +444,12 @@ header {
   background: var(--gradient-brand);
   box-shadow: 0 0 60px rgba(14, 165, 233, 0.35);
 }
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .avatar-initials {
   font-size: 2rem;
   font-weight: 800;
