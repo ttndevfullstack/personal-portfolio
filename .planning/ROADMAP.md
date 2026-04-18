@@ -14,6 +14,7 @@
 | 2 | Experience & Projects | 1/1 | Complete   | 2026-04-16 |
 | 3 | Skills, Education & Certifications | 1/1 | Complete   | 2026-04-16 |
 | 4 | Vercel Deployment & Polish | 1/1 | Complete   | 2026-04-16 |
+| 5 | Multi-Theme Support & Selector | 1/1 | UI-SPEC Done | 2026-04-18 |
 
 ---
 
@@ -142,15 +143,26 @@
 
 **Coverage:** 34 / 34 requirements mapped ✓
 
-### Phase 5: Implement multi-theme support (4 themes) and selector UI. Ensure include at least 1 light theme
+### Phase 5: Implement multi-theme support (4 themes) and selector UI
 
-**Goal:** [To be planned]
-**Requirements**: TBD
+**Goal:** Implement 4 analytically-selected color themes (Midnight, Arctic, Forest, Dusk) and a theme-selection widget in the header, ensuring persistence and zero flash of unstyled content (FOUC).
+
+**Requirements:**
+- THEME-01: 4 color palettes (1 Light, 3 Dark) as per `05-UI-SPEC.md`
+- THEME-02: LocalStorage persistence for user selection
+- THEME-03: Inline `<head>` script to prevent FOUC
+- THEME-04: Floating glassmorphic theme selection widget in navigation
+- THEME-05: Smooth color transitions on switch
+
+**Success criteria:**
+1. User can switch between 4 distinct themes using a UI toggle in the nav bar.
+2. The selected theme persists across page refreshes.
+3. No white/dark "flash" occurs before the correct theme loads.
+4. All UI components (cards, badges, buttons) adapt their colors and glows to the active theme.
+
+**UI hint**: yes (05-UI-SPEC.md approved)
 **Depends on:** Phase 4
 **Plans:** 0 plans
-
-Plans:
-- [ ] TBD (run /gsd-plan-phase 6 to break down)
 
 ---
 *Roadmap created: 2026-04-16*
