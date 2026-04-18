@@ -14,7 +14,7 @@
 | 2 | Experience & Projects | 1/1 | Complete   | 2026-04-16 |
 | 3 | Skills, Education & Certifications | 1/1 | Complete   | 2026-04-16 |
 | 4 | Vercel Deployment & Polish | 1/1 | Complete   | 2026-04-16 |
-| 5 | Multi-Theme Support & Selector | 1/1 | UI-SPEC Done | 2026-04-18 |
+| 5 | Multi-Theme Support & Selector | 1/1 | Complete     | 2026-04-18 |
 
 ---
 
@@ -162,7 +162,10 @@
 
 **UI hint**: yes (05-UI-SPEC.md approved)
 **Depends on:** Phase 4
-**Plans:** 0 plans
+**Plans:** 1 plans (1 completed)
+
+Plans:
+- [x] 05-01: Implement Multi-Theme System & Selector UI
 
 ---
 *Roadmap created: 2026-04-16*
