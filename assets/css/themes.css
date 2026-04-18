@@ -56,6 +56,7 @@
   --accent-glow:      rgba(79, 70, 229, 0.15);
   --accent-hover:     #6366f1;
   --accent-rgb:       79, 70, 229;
+  --bg-rgb:           248, 250, 252;
 
   --text-primary:     #1e293b;
   --text-secondary:   #475569;
@@ -89,6 +90,7 @@
   --accent-glow:      rgba(16, 185, 129, 0.25);
   --accent-hover:     #34d399;
   --accent-rgb:       16, 185, 129;
+  --bg-rgb:           13, 31, 24;
 
   --text-primary:     #f0fdf4;
   --text-secondary:   #a7f3d0;
@@ -122,6 +124,7 @@
   --accent-glow:      rgba(244, 114, 182, 0.25);
   --accent-hover:     #fb7185;
   --accent-rgb:       244, 114, 182;
+  --bg-rgb:           15, 10, 30;
 
   --text-primary:     #fdf4ff;
   --text-secondary:   #e9d5ff;
