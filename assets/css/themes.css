@@ -8,7 +8,7 @@
 /* Already declared in :root inside style.css — no duplication needed.
    Explicit [data-theme="midnight"] ensures it wins over other overrides. */
 :root,
-[data-theme="midnight"] {
+:root[data-theme="midnight"] {
   --bg-primary:       #070d1a;
   --bg-secondary:     #0d1629;
   --bg-card:          rgba(255, 255, 255, 0.03);
@@ -41,7 +41,7 @@
 }
 
 /* ─── Arctic (Light) ─────────────────────────────────────── */
-[data-theme="arctic"] {
+:root[data-theme="arctic"] {
   --bg-primary:       #f8fafc;
   --bg-secondary:     #f1f5f9;
   --bg-card:          rgba(255, 255, 255, 0.80);
@@ -75,7 +75,7 @@
 }
 
 /* ─── Forest (Dark) ──────────────────────────────────────── */
-[data-theme="forest"] {
+:root[data-theme="forest"] {
   --bg-primary:       #0d1f18;
   --bg-secondary:     #122b21;
   --bg-card:          rgba(255, 255, 255, 0.03);
@@ -109,7 +109,7 @@
 }
 
 /* ─── Dusk (Dark) ────────────────────────────────────────── */
-[data-theme="dusk"] {
+:root[data-theme="dusk"] {
   --bg-primary:       #0f0a1e;
   --bg-secondary:     #18102e;
   --bg-card:          rgba(255, 255, 255, 0.03);
