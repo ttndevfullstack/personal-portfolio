@@ -142,5 +142,15 @@
 
 **Coverage:** 34 / 34 requirements mapped ✓
 
+### Phase 5: Implement multi-theme support (4 themes) and selector UI. Ensure include at least 1 light theme
+
+**Goal:** [To be planned]
+**Requirements**: TBD
+**Depends on:** Phase 4
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD (run /gsd-plan-phase 6 to break down)
+
 ---
 *Roadmap created: 2026-04-16*
