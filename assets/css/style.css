@@ -204,12 +204,13 @@ button { cursor: pointer; background: none; border: none; font: inherit; }
 
 /* ─── Navigation ─────────────────────────────────────────── */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   padding: 16px 2rem;
+  background-color: var(--bg-primary);
   pointer-events: none;
 }
 #navbar {
